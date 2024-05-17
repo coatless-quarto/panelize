@@ -1,5 +1,27 @@
 [
   {
+    "objectID": "qpanelize-release-notes.html",
+    "href": "qpanelize-release-notes.html",
+    "title": "Release Notes",
+    "section": "",
+    "text": "panelize allows for Quarto code cells to be tabbified.\n\n.to-webr: converts an R code cell to webR\n.to-pyodide: converts a Python cell to Python\n.to-panel: converts an existing code cell to contain output alongside of options",
+    "crumbs": [
+      "Extra",
+      "Release Notes"
+    ]
+  },
+  {
+    "objectID": "qpanelize-release-notes.html#features",
+    "href": "qpanelize-release-notes.html#features",
+    "title": "Release Notes",
+    "section": "",
+    "text": "panelize allows for Quarto code cells to be tabbified.\n\n.to-webr: converts an R code cell to webR\n.to-pyodide: converts a Python cell to Python\n.to-panel: converts an existing code cell to contain output alongside of options",
+    "crumbs": [
+      "Extra",
+      "Release Notes"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
