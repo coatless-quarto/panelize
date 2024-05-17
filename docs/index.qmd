@@ -1,0 +1,8 @@
+---
+title: "Home"
+format: 
+  html:
+    toc: false
+---
+
+The `panelize` extension allows you to tabbify existing code cells.

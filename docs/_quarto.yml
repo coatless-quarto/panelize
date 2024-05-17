@@ -1,0 +1,28 @@
+project:
+  type: website
+
+website:
+  title: "panelize"
+  reader-mode: true
+  repo-url: https://github.com/coatless-quarto/panelize/
+  repo-actions: [edit, issue]
+  sidebar:
+    style: "floating"
+    search: true
+    tools:
+      - icon: github
+        href: https://github.com/coatless-quarto/panelize/
+    contents: 
+      - text: "Home"
+        file: index.qmd
+      - section: "Support"
+        contents:
+        - text: "Submit an issue"
+          href: https://github.com/coatless-quarto/panelize/issues/new/choose
+      - section: "Extra"
+        contents:
+        - qpanelize-release-notes.qmd
+
+format: 
+  html:
+    toc: true
