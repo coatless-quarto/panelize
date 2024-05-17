@@ -1,0 +1,18 @@
+---
+title: "Release Notes"
+date: "05-16-2024"
+date-modified: last-modified
+engine: markdown
+format: 
+  html:
+    toc: true
+---
+
+# 0.0.0-dev.1: ???? (??-??-????)
+
+## Features
+
+- `panelize` allows for Quarto code cells to be tabbified.
+   - `.to-webr`: converts an R code cell to webR
+   - `.to-pyodide`: converts a Python cell to Python
+   - `.to-panel`: converts an existing code cell to contain output alongside of options
