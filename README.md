@@ -32,7 +32,7 @@ Supported options include:
 
 | Class         | Description                                                                         |
 |---------------|-------------------------------------------------------------------------------------|
-| `.to-panel`   | Convert a code cell to show rendered output and its source.                         |
+| `.to-source`  | Convert a code cell to show rendered output and its source.                         |
 | `.to-pyodide` | Convert code cell from static Python code to interactive Python code using Pyodide. |
 | `.to-webr`    | Convert code cell from static R code to interactive R code using webR.              |
 
@@ -40,7 +40,7 @@ Supported options include:
 For example, if we have a code cell with R that we want to show its options, then we use:
 
 ```` md
-:::{.to-panel}
+:::{.to-source}
 ```{r}
 #| echo: fenced
 #| eval: true

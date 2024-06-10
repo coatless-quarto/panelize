@@ -13,6 +13,7 @@ format:
 ## Features
 
 - `panelize` allows for Quarto code cells to be tabbified.
-   - `.to-webr`: converts an R code cell to webR
+   - `.to-source`: converts an existing code cell also show its source with options.
    - `.to-pyodide`: converts a Python cell to Python
-   - `.to-panel`: converts an existing code cell also show its source with options.
+   - `.to-webr`: converts an R code cell to webR
+   

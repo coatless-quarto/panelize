@@ -33,8 +33,8 @@ function Div(div)
   local to_webr = div.classes:includes("to-webr")
   local to_pyodide = div.classes:includes("to-pyodide")
 
-  -- Check if the `div` has the class "to-panel"/"to-webr"/"to-pyodide"
-  if not (div.classes:includes("to-panel") or to_webr or to_pyodide) then 
+  -- Check if the `div` has the class "to-source"/"to-webr"/"to-pyodide"
+  if not (div.classes:includes("to-source") or to_webr or to_pyodide) then 
     return
   end
   
