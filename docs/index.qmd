@@ -18,7 +18,7 @@ You can wrap existing code cells using a `Div` and specify the class. For exampl
 
 ```` md
 :::{.to-pyodide}
-```{python}
+```{{python}}
 x = [1, 2]
 print(x)
 ```
