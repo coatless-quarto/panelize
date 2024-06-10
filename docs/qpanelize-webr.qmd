@@ -1,6 +1,7 @@
 ---
 title: "R to Interactive R"
 format: html
+engine: knitr
 filters:
 - panelize
 - webr

@@ -34,3 +34,5 @@ website:
 format: 
   html:
     toc: true
+
+engine: knitr
