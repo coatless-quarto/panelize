@@ -1,6 +1,6 @@
 # quarto-panelize: A Quarto Extension for Panelizing Code Cells
 
-The `quarto-panelize` extension allows you to tabbify existing code cells.
+The `quarto-panelize` extension allows you to tabbify existing code cells to show their source or add interactivity.
 
 ## Installation
 
