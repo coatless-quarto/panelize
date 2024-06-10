@@ -305,7 +305,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"1 + 1","id":1,"options":{"context":"interactive","comment":"","warning":"true","out-width":"700px","editor-max-height":"","output":"true","dpi":72,"out-height":"","results":"markup","fig-height":5,"editor-font-scale":"1","message":"true","fig-width":7,"autorun":"false","editor-quick-suggestions":"false","read-only":"false","classes":"","fig-cap":"","label":"unnamed-chunk-1"}}];
+globalThis.qwebrCellDetails = [{"options":{"classes":"","out-height":"","dpi":72,"label":"unnamed-chunk-1","editor-font-scale":"1","fig-width":7,"read-only":"false","comment":"","fig-cap":"","message":"true","fig-height":5,"out-width":"700px","context":"interactive","editor-max-height":"","warning":"true","results":"markup","output":"true","editor-quick-suggestions":"false","autorun":"false"},"id":1,"code":"1 + 1"}];
 
 </script>
 <script type="module">
@@ -1278,6 +1278,7 @@ globalThis.qwebrExecuteCode = async function (
   <li><a href="#document-header-modification" id="toc-document-header-modification" class="nav-link" data-scroll-target="#document-header-modification">Document Header modification</a></li>
   <li><a href="#wraping-the-code-cell" id="toc-wraping-the-code-cell" class="nav-link" data-scroll-target="#wraping-the-code-cell">Wraping the code cell</a></li>
   <li><a href="#result" id="toc-result" class="nav-link" data-scroll-target="#result">Result</a></li>
+  <li><a href="#autorun-code" id="toc-autorun-code" class="nav-link" data-scroll-target="#autorun-code">Autorun Code</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/coatless-quarto/panelize/edit/main/qpanelize-webr.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/coatless-quarto/panelize/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -1533,7 +1534,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 
 <section id="overview" class="level1">
 <h1>Overview</h1>
-<p>We can use panelize to take a usual R code cell and convert it into an interactive cell.</p>
+<p>We can use <strong>{quarto-panelize}</strong> to take a usual R code cell and convert it into an interactive cell powered by <a href="https://docs.r-wasm.org/">webR</a>. In this guide, we’ll walk through the steps!</p>
 <section id="code-cell" class="level2">
 <h2 class="anchored" data-anchor-id="code-cell">Code Cell</h2>
 <p>For example, let’s take the following R cell:</p>
@@ -1595,6 +1596,20 @@ Important
 </div>
 </div>
 </div>
+</section>
+<section id="autorun-code" class="level2">
+<h2 class="anchored" data-anchor-id="autorun-code">Autorun Code</h2>
+<p>You may wish to allow the interactive cells to be automatically run when the document opens by specifying in the document header:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My title"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">webr</span><span class="kw">:</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">cell-options</span><span class="kw">:</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">autorun</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="fu">filters</span><span class="kw">:</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> panelize</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> webr</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
