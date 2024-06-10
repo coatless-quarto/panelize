@@ -87,7 +87,7 @@ function Div(div)
     tabs = pandoc.List({ result_tab, interactive_tab })
   else 
     -- Create a tab for the Rendered
-    local rendered_tab = quarto.Tab({ title = "Rendered", content = pandoc.List({cleaned_code_cell, cell_output}) })
+    local rendered_tab = quarto.Tab({ title = "Result", content = pandoc.List({cleaned_code_cell, cell_output}) })
     
     -- Create a tab for the Source
     local source_tab = quarto.Tab({ title = "Source", content =  clone_and_update_code_block(code_block, {"md", "cell-code"}) })
