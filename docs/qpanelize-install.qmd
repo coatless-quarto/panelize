@@ -1,0 +1,61 @@
+---
+title: "Install the Extension"
+format: html
+filters:
+- panelize
+---
+
+To install the `quarto-panelize` extension, follow these steps:
+
+1. Enter a Quarto project.
+
+2. Open your terminal inside the Quarto project.
+
+3. Run the following command:
+
+```bash
+quarto add coatless-quarto/panelize
+```
+
+This command will download and install the extension under the `_extensions` subdirectory of your Quarto project. If you are using version control, ensure that you include this directory in your repository.
+
+## Interactivity
+
+If you wish to use the interactive feature, please make sure to install the following Quarto extensions:
+
+### Python 
+
+For interactivity with Python, please type into Terminal:
+
+```sh
+quarto add coatless-quarto/pyodide
+```
+
+Please make sure that `panelize` is placed before `pyodide` in the document header `filters` statement, e.g. 
+
+```yml
+---
+filters:
+- panelize
+- pyodide
+---
+```
+
+### R 
+
+For interactivity with R, please type into Terminal:
+
+```sh
+quarto add coatless/quarto-webr
+```
+
+Please make sure that `panelize` is placed before `webr` in the document header `filters` statement, e.g. 
+
+```yml
+---
+filters:
+- panelize
+- webr
+---
+```
+

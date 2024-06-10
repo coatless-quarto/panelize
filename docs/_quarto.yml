@@ -15,6 +15,8 @@ website:
     contents: 
       - text: "Home"
         file: index.qmd
+      - text: "Install"
+        file: qpanelize-install.qmd
       - section: "Panelize Demos"
         contents:
         - text: "Code Cells"

@@ -4,6 +4,8 @@ format:
   html:
     toc: false
 engine: knitr
+filters:
+- panelize
 ---
 
 The `panelize` extension allows you to tabbify existing code cells. The supported options include:
@@ -14,13 +16,16 @@ The `panelize` extension allows you to tabbify existing code cells. The supporte
 | `.to-pyodide` | Convert code cell from static Python code to interactive Python code using Pyodide. |
 | `.to-webr`    | Convert code cell from static R code to interactive R code using webR.              |
 
-You can wrap existing code cells using a `Div` and specify the class. For example, with Python, that would look like:
+You can wrap existing code cells using a `Div` and specify the class. For example, with Python we would have:
 
 ```` md
-:::{.to-pyodide}
+:::{.to-panel}
 ```{{python}}
+#| echo: fenced
+#| eval: true
 x = [1, 2]
 print(x)
 ```
 :::
 ````
+
