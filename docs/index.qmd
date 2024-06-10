@@ -3,6 +3,7 @@ title: "Home"
 format: 
   html:
     toc: false
+engine: knitr
 ---
 
 The `panelize` extension allows you to tabbify existing code cells. The supported options include:
