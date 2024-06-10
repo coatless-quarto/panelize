@@ -1,10 +1,13 @@
 function Div(div)
+
     if not div.classes:includes("to-panel") then 
       return
     end
+    
     local code_block = nil
     local cell_output = nil
-    quarto._quarto.ast.walk(div.content, {
+
+    div:walk({
       CodeBlock = function(code)
         if code.classes:includes("cell-code") then
           code_block = code
