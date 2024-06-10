@@ -2,10 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://coatless-quarto.github.io/panelize/qpanelize-release-notes.html</loc>
-    <lastmod>2024-06-10T02:03:20.112Z</lastmod>
+    <lastmod>2024-06-10T03:28:50.394Z</lastmod>
+  </url>
+  <url>
+    <loc>https://coatless-quarto.github.io/panelize/qpanelize-demo.html</loc>
+    <lastmod>2024-06-10T03:28:50.394Z</lastmod>
   </url>
   <url>
     <loc>https://coatless-quarto.github.io/panelize/index.html</loc>
-    <lastmod>2024-06-10T02:03:20.112Z</lastmod>
+    <lastmod>2024-06-10T03:28:50.394Z</lastmod>
   </url>
 </urlset>

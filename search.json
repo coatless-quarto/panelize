@@ -22,6 +22,17 @@
     ]
   },
   {
+    "objectID": "qpanelize-demo.html",
+    "href": "qpanelize-demo.html",
+    "title": "Demo",
+    "section": "",
+    "text": "For example, let’s take the following code cell:\n```{r}\n1 + 1\n```\nWith panelize, we can switch it to showcase the rendered output and show separately how the chunk was made:\n\nRenderedSource\n\n\n\n[1] 2\n\n\n\n1 + 1",
+    "crumbs": [
+      "Panelize Demos",
+      "Code Cells"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
