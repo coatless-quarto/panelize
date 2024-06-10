@@ -1,0 +1,24 @@
+---
+title: "Demo"
+format: html
+filters:
+- panelize
+---
+
+For example, let's take the following code cell:
+
+````md
+```{{r}}
+1 + 1
+```
+````
+
+With panelize, we can switch it to showcase the rendered output and show separately how the chunk was made:
+
+:::{.to-panel}
+
+```{r}
+1 + 1
+```
+
+:::

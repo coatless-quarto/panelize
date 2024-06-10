@@ -15,6 +15,12 @@ website:
     contents: 
       - text: "Home"
         file: index.qmd
+      - section: "Panelize Demos"
+        contents:
+        - text: "Code Cells"
+          href: qpanelize-demo.qmd
+        - text: "R to webR"
+        - text: "Python to Pyodide"
       - section: "Support"
         contents:
         - text: "Submit an issue"
