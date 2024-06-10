@@ -5,4 +5,21 @@ format:
     toc: false
 ---
 
-The `panelize` extension allows you to tabbify existing code cells.
+The `panelize` extension allows you to tabbify existing code cells. The supported options include:
+
+| Class         | Description                                                                         |
+|---------------|-------------------------------------------------------------------------------------|
+| `.to-panel`   | Convert a code cell to show rendered output and its source.                         |
+| `.to-pyodide` | Convert code cell from static Python code to interactive Python code using Pyodide. |
+| `.to-webr`    | Convert code cell from static R code to interactive R code using webR.              |
+
+You can wrap existing code cells using a `Div` and specify the class. For example, with Python, that would look like:
+
+```` md
+:::{.to-pyodide}
+```{python}
+x = [1, 2]
+print(x)
+```
+:::
+````

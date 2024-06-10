@@ -1,0 +1,40 @@
+---
+title: "Display Code Cell Source Separately"
+format: html
+filters:
+- panelize
+---
+
+For example, let's take the following code cell using the [fenced](https://quarto.org/docs/computations/execution-options.html#fenced-echo) output to ensure options are passed forward.
+
+````md
+```{{r}}
+#| echo: fenced
+#| eval: true
+1 + 1
+```
+````
+
+With **{quarto-panelize}**, we can switch it to show in one tab the code cell and output together and in another tab show using markdown highlighting the output.
+
+:::{.to-panel}
+
+```{r}
+#| echo: fenced
+#| eval: true
+1 + 1
+```
+
+:::
+
+Without setting `echo: fenced`, the source will only display the code without results.
+
+:::{.to-panel}
+
+
+```{r}
+#| eval: true
+1 + 1
+```
+
+:::

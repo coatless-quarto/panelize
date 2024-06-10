@@ -18,9 +18,11 @@ website:
       - section: "Panelize Demos"
         contents:
         - text: "Code Cells"
-          href: qpanelize-demo.qmd
-        - text: "R to webR"
+          href: qpanelize-cell.qmd
         - text: "Python to Pyodide"
+          href: qpanelize-pyodide.qmd
+        - text: "R to webR"
+          href: qpanelize-webr.qmd
       - section: "Support"
         contents:
         - text: "Submit an issue"

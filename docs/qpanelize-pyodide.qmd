@@ -1,0 +1,75 @@
+---
+title: "Python to Interactive Python"
+format: html
+engine: knitr
+filters:
+- panelize
+- pyodide
+---
+
+# Overview
+
+We can use **{quarto-panelize}** to take a usual Python code cell and convert it into an interactive cell powered by [Pyodide](https://pyodide.org/en/stable/). In this guide, we'll walk through the steps!
+
+## Code Cell 
+
+For example, let's take the following Python cell:
+
+````md
+```{{python}}
+x = [1, 2]
+print(x)
+```
+````
+
+## Document Header modification 
+
+Next, in our document header, we need to specify both the `panelize` and `pyodide` filters under the `filters` key, e.g. 
+
+
+````md
+---
+title: "My title"
+format: html
+filters:
+- panelize
+- pyodide
+---
+````
+
+:::{.callout-important}
+The order matters! Please make sure `panelize` comes before `pyodide`. Otherwise, the `pyodide` filter will _not_ see the code cell.
+:::
+
+You will also need to have the `{quarto-pyodide}` extension installed by typing in Terminal: 
+
+````sh
+quarto add coatless-quarto/pyodide
+````
+
+## Wraping the code cell 
+
+Next, we use a special class called `.to-pyodide` inside of a Div denoted by `:::` around a usual R code cell, e.g. 
+
+````md
+:::{.to-pyodide}
+```{{python}}
+x = [1, 2]
+print(x)
+```
+:::
+````
+
+This allows us to ensure the computational order is maintained when translating from R to a `{quarto-webr}` code cell.
+
+## Result
+
+As a result, we now have access to two tabs: Result and Interactive.
+
+:::{.to-pyodide}
+```{python}
+x = [1, 2]
+print(x)
+```
+:::
+

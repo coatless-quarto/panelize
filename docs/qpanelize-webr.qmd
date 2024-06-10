@@ -1,0 +1,71 @@
+---
+title: "R to Interactive R"
+format: html
+filters:
+- panelize
+- webr
+---
+
+# Overview
+
+We can use panelize to take a usual R code cell and convert it into an interactive cell.
+
+## Code Cell 
+
+For example, let's take the following R cell:
+
+````md
+```{{r}}
+1 + 1
+```
+````
+
+## Document Header modification 
+
+Next, in our document header, we need to specify both the `panelize` and `webr` filters under the `filters` key, e.g. 
+
+
+````md
+---
+title: "My title"
+format: html
+filters:
+- panelize
+- webr
+---
+````
+
+:::{.callout-important}
+The order matters! Please make sure `panelize` comes before `webr`. Otherwise, the `webr` filter will _not_ see the code cell.
+:::
+
+You will also need to have the `{quarto-webr}` extension installed by typing in Terminal: 
+
+````sh
+quarto add coatless/quarto-webr
+````
+
+## Wraping the code cell 
+
+Next, we use a special class called `.to-webr` inside of a Div denoted by `:::` around a usual R code cell, e.g. 
+
+````md
+:::{.to-webr}
+```{{r}}
+1 + 1
+```
+:::
+````
+
+This allows us to ensure the computational order is maintained when translating from R to a `{quarto-webr}` code cell.
+
+## Result
+
+As a result, we now have access to two tabs: Result and Interactive.
+
+:::{.to-webr}
+```{r}
+1 + 1
+```
+:::
+
