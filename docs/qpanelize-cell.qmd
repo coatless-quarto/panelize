@@ -15,7 +15,7 @@ For example, let's take the following code cell using the [fenced](https://quart
 ```
 ````
 
-With **{quarto-panelize}**, we can switch it to show in one tab the code cell and output together and in another tab show using markdown highlighting the output. For example, the following:
+Using the **{quarto-panelize}** extension, you can show the code cell and its output together in one tab, and separately display the source of the code cell with nearly all options (minus `echo`) in another tab tab. Here's how it can be done:
 
 ````md
 :::{.to-panel}
@@ -29,7 +29,7 @@ With **{quarto-panelize}**, we can switch it to show in one tab the code cell an
 :::
 ````
 
-Will create:
+This will create two tabs: Result and Source.
 
 :::{.to-panel}
 
@@ -41,7 +41,7 @@ Will create:
 
 :::
 
-Without setting `echo: fenced`, the source will only display the code without results.
+Without setting `echo: fenced`, the Source tab will only display the code without results.
 
 :::{.to-panel}
 
@@ -52,3 +52,4 @@ Without setting `echo: fenced`, the source will only display the code without re
 ```
 
 :::
+
