@@ -37,9 +37,29 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "The panelize extension allows you to tabbify existing code cells. The supported options include:\n\n\n\n\n\n\n\nClass\nDescription\n\n\n\n\n.to-panel\nConvert a code cell to show rendered output and its source.\n\n\n.to-pyodide\nConvert code cell from static Python code to interactive Python code using Pyodide.\n\n\n.to-webr\nConvert code cell from static R code to interactive R code using webR.\n\n\n\nYou can wrap existing code cells using a Div and specify the class. For example, with Python, that would look like:\n:::{.to-pyodide}\n::: {.cell}\n\n```{.python .cell-code}\nx = [1, 2]\nprint(x)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1, 2]\n```\n\n\n:::\n:::\n:::",
+    "text": "The panelize extension allows you to tabbify existing code cells. The supported options include:\n\n\n\n\n\n\n\nClass\nDescription\n\n\n\n\n.to-panel\nConvert a code cell to show rendered output and its source.\n\n\n.to-pyodide\nConvert code cell from static Python code to interactive Python code using Pyodide.\n\n\n.to-webr\nConvert code cell from static R code to interactive R code using webR.\n\n\n\nYou can wrap existing code cells using a Div and specify the class. For example, with Python we would have:\n:::{.to-panel}\n```{python}\n#| echo: fenced\n#| eval: true\nx = [1, 2]\nprint(x)\n```\n:::",
     "crumbs": [
       "Home"
+    ]
+  },
+  {
+    "objectID": "qpanelize-install.html",
+    "href": "qpanelize-install.html",
+    "title": "Install the Extension",
+    "section": "",
+    "text": "To install the quarto-panelize extension, follow these steps:\nThis command will download and install the extension under the _extensions subdirectory of your Quarto project. If you are using version control, ensure that you include this directory in your repository.",
+    "crumbs": [
+      "Install"
+    ]
+  },
+  {
+    "objectID": "qpanelize-install.html#interactivity",
+    "href": "qpanelize-install.html#interactivity",
+    "title": "Install the Extension",
+    "section": "Interactivity",
+    "text": "Interactivity\nIf you wish to use the interactive feature, please make sure to install the following Quarto extensions:\n\nPython\nFor interactivity with Python, please type into Terminal:\nquarto add coatless-quarto/pyodide\nPlease make sure that panelize is placed before pyodide in the document header filters statement, e.g. \n---\nfilters:\n- panelize\n- pyodide\n---\n\n\nR\nFor interactivity with R, please type into Terminal:\nquarto add coatless/quarto-webr\nPlease make sure that panelize is placed before webr in the document header filters statement, e.g. \n---\nfilters:\n- panelize\n- webr\n---",
+    "crumbs": [
+      "Install"
     ]
   },
   {
