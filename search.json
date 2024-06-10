@@ -1,5 +1,16 @@
 [
   {
+    "objectID": "qpanelize-cell.html",
+    "href": "qpanelize-cell.html",
+    "title": "Display Code Cell Source Separately",
+    "section": "",
+    "text": "For example, let’s take the following code cell using the fenced output to ensure options are passed forward.\n```{r}\n#| echo: fenced\n#| eval: true\n1 + 1\n```\nWith {quarto-panelize}, we can switch it to show in one tab the code cell and output together and in another tab show using markdown highlighting the output.\n\nRenderedSource\n\n\n1 + 1\n\n[1] 2\n\n\n\n```{r}\n#| eval: true\n1 + 1\n```\n\n\n\nWithout setting echo: fenced, the source will only display the code without results.\n\nRenderedSource\n\n\n1 + 1\n\n[1] 2\n\n\n\n1 + 1",
+    "crumbs": [
+      "Panelize Demos",
+      "Code Cells"
+    ]
+  },
+  {
     "objectID": "qpanelize-release-notes.html",
     "href": "qpanelize-release-notes.html",
     "title": "Release Notes",
@@ -22,24 +33,123 @@
     ]
   },
   {
-    "objectID": "qpanelize-demo.html",
-    "href": "qpanelize-demo.html",
-    "title": "Demo",
-    "section": "",
-    "text": "For example, let’s take the following code cell:\n```{r}\n1 + 1\n```\nWith panelize, we can switch it to showcase the rendered output and show separately how the chunk was made:\n\nRenderedSource\n\n\n\n[1] 2\n\n\n\n1 + 1",
-    "crumbs": [
-      "Panelize Demos",
-      "Code Cells"
-    ]
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "The panelize extension allows you to tabbify existing code cells.",
+    "text": "The panelize extension allows you to tabbify existing code cells. The supported options include:\n\n\n\n\n\n\n\nClass\nDescription\n\n\n\n\n.to-panel\nConvert a code cell to show rendered output and its source.\n\n\n.to-pyodide\nConvert code cell from static Python code to interactive Python code using Pyodide.\n\n\n.to-webr\nConvert code cell from static R code to interactive R code using webR.\n\n\n\nYou can wrap existing code cells using a Div and specify the class. For example, with Python, that would look like:\n:::{.to-pyodide}\n::: {.cell}\n\n```{.python .cell-code}\nx = [1, 2]\nprint(x)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1, 2]\n```\n\n\n:::\n:::\n:::",
     "crumbs": [
       "Home"
+    ]
+  },
+  {
+    "objectID": "qpanelize-webr.html",
+    "href": "qpanelize-webr.html",
+    "title": "R to Interactive R",
+    "section": "",
+    "text": "We can use panelize to take a usual R code cell and convert it into an interactive cell.\n\n\nFor example, let’s take the following R cell:\n```{r}\n1 + 1\n```\n\n\n\nNext, in our document header, we need to specify both the panelize and webr filters under the filters key, e.g. \n---\ntitle: \"My title\"\nformat: html\nfilters:\n- panelize\n- webr\n---\n\n\n\n\n\n\nImportant\n\n\n\nThe order matters! Please make sure panelize comes before webr. Otherwise, the webr filter will not see the code cell.\n\n\nYou will also need to have the {quarto-webr} extension installed by typing in Terminal:\nquarto add coatless/quarto-webr\n\n\n\nNext, we use a special class called .to-webr inside of a Div denoted by ::: around a usual R code cell, e.g. \n:::{.to-webr}\n```{r}\n1 + 1\n```\n:::\nThis allows us to ensure the computational order is maintained when translating from R to a {quarto-webr} code cell.\n\n\n\nAs a result, we now have access to two tabs: Result and Interactive.\n\nResultInteractive\n\n\n1 + 1\n\n[1] 2\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Panelize Demos",
+      "R to webR"
+    ]
+  },
+  {
+    "objectID": "qpanelize-webr.html#code-cell",
+    "href": "qpanelize-webr.html#code-cell",
+    "title": "R to Interactive R",
+    "section": "",
+    "text": "For example, let’s take the following R cell:\n```{r}\n1 + 1\n```",
+    "crumbs": [
+      "Panelize Demos",
+      "R to webR"
+    ]
+  },
+  {
+    "objectID": "qpanelize-webr.html#document-header-modification",
+    "href": "qpanelize-webr.html#document-header-modification",
+    "title": "R to Interactive R",
+    "section": "",
+    "text": "Next, in our document header, we need to specify both the panelize and webr filters under the filters key, e.g. \n---\ntitle: \"My title\"\nformat: html\nfilters:\n- panelize\n- webr\n---\n\n\n\n\n\n\nImportant\n\n\n\nThe order matters! Please make sure panelize comes before webr. Otherwise, the webr filter will not see the code cell.\n\n\nYou will also need to have the {quarto-webr} extension installed by typing in Terminal:\nquarto add coatless/quarto-webr",
+    "crumbs": [
+      "Panelize Demos",
+      "R to webR"
+    ]
+  },
+  {
+    "objectID": "qpanelize-webr.html#wraping-the-code-cell",
+    "href": "qpanelize-webr.html#wraping-the-code-cell",
+    "title": "R to Interactive R",
+    "section": "",
+    "text": "Next, we use a special class called .to-webr inside of a Div denoted by ::: around a usual R code cell, e.g. \n:::{.to-webr}\n```{r}\n1 + 1\n```\n:::\nThis allows us to ensure the computational order is maintained when translating from R to a {quarto-webr} code cell.",
+    "crumbs": [
+      "Panelize Demos",
+      "R to webR"
+    ]
+  },
+  {
+    "objectID": "qpanelize-webr.html#result",
+    "href": "qpanelize-webr.html#result",
+    "title": "R to Interactive R",
+    "section": "",
+    "text": "As a result, we now have access to two tabs: Result and Interactive.\n\nResultInteractive\n\n\n1 + 1\n\n[1] 2\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Panelize Demos",
+      "R to webR"
+    ]
+  },
+  {
+    "objectID": "qpanelize-pyodide.html",
+    "href": "qpanelize-pyodide.html",
+    "title": "Python to Interactive Python",
+    "section": "",
+    "text": "We can use {quarto-panelize} to take a usual Python code cell and convert it into an interactive cell powered by Pyodide. In this guide, we’ll walk through the steps!\n\n\nFor example, let’s take the following Python cell:\n```{python}\nx = [1, 2]\nprint(x)\n```\n\n\n\nNext, in our document header, we need to specify both the panelize and pyodide filters under the filters key, e.g. \n---\ntitle: \"My title\"\nformat: html\nfilters:\n- panelize\n- pyodide\n---\n\n\n\n\n\n\nImportant\n\n\n\nThe order matters! Please make sure panelize comes before pyodide. Otherwise, the pyodide filter will not see the code cell.\n\n\nYou will also need to have the {quarto-pyodide} extension installed by typing in Terminal:\nquarto add coatless-quarto/pyodide\n\n\n\nNext, we use a special class called .to-pyodide inside of a Div denoted by ::: around a usual R code cell, e.g. \n:::{.to-pyodide}\n```{python}\nx = [1, 2]\nprint(x)\n```\n:::\nThis allows us to ensure the computational order is maintained when translating from R to a {quarto-webr} code cell.\n\n\n\nAs a result, we now have access to two tabs: Result and Interactive.\n\nResultInteractive\n\n\nx = [1, 2]\nprint(x)\n\n[1, 2]\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Panelize Demos",
+      "Python to Pyodide"
+    ]
+  },
+  {
+    "objectID": "qpanelize-pyodide.html#code-cell",
+    "href": "qpanelize-pyodide.html#code-cell",
+    "title": "Python to Interactive Python",
+    "section": "",
+    "text": "For example, let’s take the following Python cell:\n```{python}\nx = [1, 2]\nprint(x)\n```",
+    "crumbs": [
+      "Panelize Demos",
+      "Python to Pyodide"
+    ]
+  },
+  {
+    "objectID": "qpanelize-pyodide.html#document-header-modification",
+    "href": "qpanelize-pyodide.html#document-header-modification",
+    "title": "Python to Interactive Python",
+    "section": "",
+    "text": "Next, in our document header, we need to specify both the panelize and pyodide filters under the filters key, e.g. \n---\ntitle: \"My title\"\nformat: html\nfilters:\n- panelize\n- pyodide\n---\n\n\n\n\n\n\nImportant\n\n\n\nThe order matters! Please make sure panelize comes before pyodide. Otherwise, the pyodide filter will not see the code cell.\n\n\nYou will also need to have the {quarto-pyodide} extension installed by typing in Terminal:\nquarto add coatless-quarto/pyodide",
+    "crumbs": [
+      "Panelize Demos",
+      "Python to Pyodide"
+    ]
+  },
+  {
+    "objectID": "qpanelize-pyodide.html#wraping-the-code-cell",
+    "href": "qpanelize-pyodide.html#wraping-the-code-cell",
+    "title": "Python to Interactive Python",
+    "section": "",
+    "text": "Next, we use a special class called .to-pyodide inside of a Div denoted by ::: around a usual R code cell, e.g. \n:::{.to-pyodide}\n```{python}\nx = [1, 2]\nprint(x)\n```\n:::\nThis allows us to ensure the computational order is maintained when translating from R to a {quarto-webr} code cell.",
+    "crumbs": [
+      "Panelize Demos",
+      "Python to Pyodide"
+    ]
+  },
+  {
+    "objectID": "qpanelize-pyodide.html#result",
+    "href": "qpanelize-pyodide.html#result",
+    "title": "Python to Interactive Python",
+    "section": "",
+    "text": "As a result, we now have access to two tabs: Result and Interactive.\n\nResultInteractive\n\n\nx = [1, 2]\nprint(x)\n\n[1, 2]\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Panelize Demos",
+      "Python to Pyodide"
     ]
   }
 ]
