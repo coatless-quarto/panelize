@@ -19,13 +19,11 @@ Using the **{quarto-panelize}** extension, you can show the code cell and its ou
 
 ````md
 :::{.to-panel}
-
 ```{{r}}
 #| echo: fenced
 #| eval: true
 1 + 1
 ```
-
 :::
 ````
 
