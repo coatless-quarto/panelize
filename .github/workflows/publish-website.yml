@@ -33,11 +33,21 @@ jobs:
                 any::rmarkdown
                 any::downlit
                 any::xml2
+
         # Back to our regularly scheduled Quarto output
         - name: "Set up Quarto"
           uses: quarto-dev/quarto-actions/setup@v2
           with:
             version: "pre-release"
+
+        # Install quarto extensions
+        - name: "Install quarto extension for quarto-webr and quarto-pyodide"
+          shell: bash
+          run: |
+            cd docs/
+            quarto add --no-prompt coatless/quarto-webr
+            quarto add --no-prompt coatless-quarto/pyodide
+            cp -r ../_extensions/ _extensions
 
         - name: Publish to GitHub Pages (and render)
           uses: quarto-dev/quarto-actions/publish@v2
