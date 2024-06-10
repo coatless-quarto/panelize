@@ -18,7 +18,7 @@ function Div(div)
     })
   
     local rendered = quarto.Tab({ title = "Rendered", content = cell_output })
-    local source = quarto.Tab({ title = "Source", code_block })
+    local source = quarto.Tab({ title = "Source", content = code_block })
     local tabs = pandoc.List({ rendered, source })
   
     return quarto.Tabset({
