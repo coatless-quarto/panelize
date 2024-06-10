@@ -15,7 +15,7 @@
     "href": "qpanelize-release-notes.html",
     "title": "Release Notes",
     "section": "",
-    "text": "panelize allows for Quarto code cells to be tabbified.\n\n.to-webr: converts an R code cell to webR\n.to-pyodide: converts a Python cell to Python\n.to-panel: converts an existing code cell to contain output alongside of options",
+    "text": "panelize allows for Quarto code cells to be tabbified.\n\n.to-webr: converts an R code cell to webR\n.to-pyodide: converts a Python cell to Python\n.to-panel: converts an existing code cell also show its source with options.",
     "crumbs": [
       "Extra",
       "Release Notes"
@@ -26,7 +26,7 @@
     "href": "qpanelize-release-notes.html#features",
     "title": "Release Notes",
     "section": "",
-    "text": "panelize allows for Quarto code cells to be tabbified.\n\n.to-webr: converts an R code cell to webR\n.to-pyodide: converts a Python cell to Python\n.to-panel: converts an existing code cell to contain output alongside of options",
+    "text": "panelize allows for Quarto code cells to be tabbified.\n\n.to-webr: converts an R code cell to webR\n.to-pyodide: converts a Python cell to Python\n.to-panel: converts an existing code cell also show its source with options.",
     "crumbs": [
       "Extra",
       "Release Notes"
