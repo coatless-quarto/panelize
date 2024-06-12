@@ -1,4 +1,4 @@
-# quarto-panelize: A Quarto Extension for Panelizing Code Cells <img src="logo-panelize.png" align ="right" alt="" width ="150"/>
+# panelize: Tabset Code Cells in Quarto <img src="logo-panelize.png" align ="right" alt="" width ="150"/>
 
 The `quarto-panelize` extension allows you to tabbify existing code cells to show their source or add interactivity.
 
