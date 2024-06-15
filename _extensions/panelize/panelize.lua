@@ -55,7 +55,7 @@ function Div(div)
         elseif code.classes:includes("python") or code.text:match("^```{{python")  then
           language = "python"
         else 
-          quarto.log.error("Please only specify either R or Python code cells inside of the `to-panel` div.")
+          quarto.log.error("Please only specify either R or Python code cells inside of the `.to-*` div.")
         end
       end
     end,
