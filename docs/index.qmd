@@ -29,3 +29,22 @@ print(x)
 :::
 ````
 
+This will generate output equivalent to: 
+
+````md
+:::{.panel-tabset}
+### Results
+```{{python}}
+#| echo: fenced
+#| eval: true
+x = [1, 2]
+print(x)
+```
+### Source
+```{{{python}}}
+#| eval: true
+x = [1, 2]
+print(x)
+```
+:::
+````

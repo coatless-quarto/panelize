@@ -16,7 +16,17 @@ To install the `quarto-panelize` extension, follow these steps:
 quarto add coatless-quarto/panelize
 ```
 
-This command will download and install the extension under the `_extensions` subdirectory of your Quarto project. If you are using version control, ensure that you include this directory in your repository.
+If you wish to make your code interactive, please install the following Quarto extensions:
+
+```sh
+# For Python
+quarto add coatless-quarto/pyodide
+
+# For R
+quarto add coatless/quarto-webr
+```
+
+These commands will download and install the extension as well as any dependencies under the `_extensions` subdirectory of your Quarto project. If you are using version control, ensure that you include this directory in your repository.
 
 ## Usage
 
@@ -37,6 +47,8 @@ Supported options include:
 | `.to-webr`    | Convert code cell from static R code to interactive R code using webR.              |
 
 
+### Display Source
+
 For example, if we have a code cell with R that we want to show its options, then we use:
 
 ```` md
@@ -49,19 +61,26 @@ For example, if we have a code cell with R that we want to show its options, the
 :::
 ````
 
+This will generate output equivalent to: 
+
+```` md
+:::{.panel-tabset}
+### Results
+```{r}
+#| eval: true
+1 + 1
+```
+### Source
+```{{r}}
+#| eval: true
+1 + 1
+```
+:::
+````
+
 ### Interactivity
 
-If you wish to make your code interactive, please install the following Quarto extensions:
-
-```sh
-# For Python
-quarto add coatless-quarto/pyodide
-
-# For R
-quarto add coatless/quarto-webr
-```
-
-Next, modify the document header and place the desired extension filter **after** `panelize`, e.g.
+For creating a tabset that contains both rendered results and interactive option, modify the document header and place the desired extension filter **after** `panelize`, e.g.
 
 ```yml
 filters:
@@ -76,7 +95,7 @@ filters:
 > Otherwise, the interactivity filter will *not* detect the code cell!
 >
 
-Finally, wrap the existing code cell using a `Div` with a class of either `.to-pyodide` or `.to-webr`.
+Next, wrap the existing code cell using a `Div` with a class of either `.to-pyodide` or `.to-webr`.
 
 For Python, that looks like: 
 
@@ -97,7 +116,6 @@ For R, that looks like:
 ```
 :::
 ````
-
 
 ## Acknowledgements
 
