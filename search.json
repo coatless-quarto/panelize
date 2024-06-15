@@ -11,22 +11,11 @@
     ]
   },
   {
-    "objectID": "qpanelize-release-notes.html",
-    "href": "qpanelize-release-notes.html",
+    "objectID": "qpanelize-release-notes.html#features-1",
+    "href": "qpanelize-release-notes.html#features-1",
     "title": "Release Notes",
-    "section": "",
-    "text": "panelize allows for Quarto code cells to be tabbified.\n\n.to-source: converts an existing code cell also show its source with options.\n.to-pyodide: converts a Python cell to Python\n.to-webr: converts an R code cell to webR",
-    "crumbs": [
-      "Extra",
-      "Release Notes"
-    ]
-  },
-  {
-    "objectID": "qpanelize-release-notes.html#features",
-    "href": "qpanelize-release-notes.html#features",
-    "title": "Release Notes",
-    "section": "",
-    "text": "panelize allows for Quarto code cells to be tabbified.\n\n.to-source: converts an existing code cell also show its source with options.\n.to-pyodide: converts a Python cell to Python\n.to-webr: converts an R code cell to webR",
+    "section": "Features",
+    "text": "Features\n\npanelize allows for Quarto code cells to be tabbified.\n\n.to-source: converts an existing code cell also show its source with options.\n.to-pyodide: converts a Python cell to Python\n.to-webr: converts an R code cell to webR",
     "crumbs": [
       "Extra",
       "Release Notes"
