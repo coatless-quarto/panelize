@@ -37,7 +37,7 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "The panelize extension allows you to tabbify existing code cells. The supported options include:\n\n\n\n\n\n\n\nClass\nDescription\n\n\n\n\n.to-source\nConvert a code cell to show rendered output and its source.\n\n\n.to-pyodide\nConvert code cell from static Python code to interactive Python code using Pyodide.\n\n\n.to-webr\nConvert code cell from static R code to interactive R code using webR.\n\n\n\nYou can wrap existing code cells using a Div and specify the class. For example, with Python we would have:\n:::{.to-source}\n```{python}\n#| echo: fenced\n#| eval: true\nx = [1, 2]\nprint(x)\n```\n:::",
+    "text": "The panelize extension allows you to tabbify existing code cells. The supported options include:\n\n\n\n\n\n\n\nClass\nDescription\n\n\n\n\n.to-source\nConvert a code cell to show rendered output and its source.\n\n\n.to-pyodide\nConvert code cell from static Python code to interactive Python code using Pyodide.\n\n\n.to-webr\nConvert code cell from static R code to interactive R code using webR.\n\n\n\nYou can wrap existing code cells using a Div and specify the class. For example, with Python we would have:\n:::{.to-source}\n```{python}\n#| echo: fenced\n#| eval: true\nx = [1, 2]\nprint(x)\n```\n:::\nThis will generate output equivalent to:\n:::{.panel-tabset}\n### Results\n```{python}\n#| echo: fenced\n#| eval: true\nx = [1, 2]\nprint(x)\n```\n### Source\n```{{python}}\n#| eval: true\nx = [1, 2]\nprint(x)\n```\n:::",
     "crumbs": [
       "Home"
     ]
