@@ -12,6 +12,8 @@ For example, let's take the following code cell using the [fenced](https://quart
 #| echo: fenced
 #| eval: true
 1 + 1
+
+plot(1:10)
 ```
 ````
 
@@ -23,6 +25,8 @@ Using the **{quarto-panelize}** extension, you can show the code cell and its ou
 #| echo: fenced
 #| eval: true
 1 + 1
+
+plot(1:10)
 ```
 :::
 ````
@@ -35,6 +39,8 @@ This will create two tabs: Result and Source.
 #| echo: fenced
 #| eval: true
 1 + 1
+
+plot(1:10)
 ```
 
 :::
@@ -47,6 +53,8 @@ Without setting `echo: fenced`, the Source tab will only display the code withou
 ```{r}
 #| eval: true
 1 + 1
+
+plot(1:10)
 ```
 
 :::
