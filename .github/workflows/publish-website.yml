@@ -41,6 +41,11 @@ jobs:
           with:
             version: "pre-release"
 
+        # Install python dependencies
+        - name: "Install python dependencies"
+          run: |
+            pip install -r docs/requirements.txt
+
         # Install quarto extensions
         - name: "Install quarto extension for quarto-webr and quarto-pyodide"
           shell: bash
