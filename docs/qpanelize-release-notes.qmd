@@ -10,9 +10,14 @@ format:
 
 # 0.0.1-dev.1: ???? (??-??-????)
 
+
 ## Features
 
-## Changes
+- Graphs can now be displayed in the `panelize` extension.
+
+## Bug fixes
+
+- Fixed a bug where the `panelize` extension was not allow for multiple outputs to be shown in rendered results and interactive code chunks.
 
 # 0.0.1: Interactive Polyglot (06-11-2024)
 
