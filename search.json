@@ -4,7 +4,7 @@
     "href": "qpanelize-cell.html",
     "title": "Display Code Cell Source Separately",
     "section": "",
-    "text": "For example, let’s take the following code cell using the fenced output to ensure options are passed forward.\n```{r}\n#| echo: fenced\n#| eval: true\n1 + 1\n```\nUsing the {quarto-panelize} extension, you can show the code cell and its output together in one tab, and separately display the source of the code cell with nearly all options (minus echo) in another tab tab. Here’s how it can be done:\n:::{.to-source}\n```{r}\n#| echo: fenced\n#| eval: true\n1 + 1\n```\n:::\nThis will create two tabs: Result and Source.\n\nResultSource\n\n\n```{r}\n#| eval: true\n1 + 1\n```\n\n[1] 2\n\n\n\n```{r}\n#| eval: true\n1 + 1\n```\n\n\n\nWithout setting echo: fenced, the Source tab will only display the code without results.\n\nResultSource\n\n\n1 + 1\n\n[1] 2\n\n\n\n1 + 1",
+    "text": "For example, let’s take the following code cell using the fenced output to ensure options are passed forward.\n```{r}\n#| echo: fenced\n#| eval: true\n1 + 1\n```\nUsing the {quarto-panelize} extension, you can show the code cell and its output together in one tab, and separately display the source of the code cell with nearly all options (minus echo) in another tab tab. Here’s how it can be done:\n:::{.to-source}\n```{r}\n#| echo: fenced\n#| eval: true\n1 + 1\n```\n:::\nThis will create two tabs: Result and Source.\n\nResultSource\n\n\n1 + 1\n\n[1] 2\n\n\n\n```{r}\n#| eval: true\n1 + 1\n```\n\n[1] 2\n\n\n\n\nWithout setting echo: fenced, the Source tab will only display the code without results.\n\nResultSource\n\n\n1 + 1\n\n[1] 2\n\n\n\n1 + 1\n\n[1] 2",
     "crumbs": [
       "Panelize Demos",
       "Code Cells"
