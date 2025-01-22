@@ -73,3 +73,40 @@ print(x)
 ```
 :::
 
+### Graphs
+
+We can also use the same approach for plotting graphs, e.g.
+
+:::{.to-pyodide}
+```{python}
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4, 5]
+y = [1, 4, 9, 16, 25]
+
+plt.plot(x, y)
+plt.show()
+```
+:::
+
+### Multiline 
+
+We can also use the same approach for multiline code cells, e.g.
+
+:::{.to-pyodide}
+```{python}
+x = list(range(1, 11))
+x
+
+y = [i**2 for i in x]
+y
+
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4, 5]
+y = [1, 4, 9, 16, 25]
+
+plt.plot(x, y)
+plt.show()
+```
+:::

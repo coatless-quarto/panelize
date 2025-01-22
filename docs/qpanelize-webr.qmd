@@ -70,6 +70,35 @@ As a result, we now have access to two tabs: Result and Interactive.
 ```
 :::
 
+The `Result` tab shows the output of the code cell, while the `Interactive` tab allows us to interact with the code cell.
+
+### Graphs
+
+We can also use the same approach for plotting graphs, e.g.
+
+:::{.to-webr}
+```{r}
+plot(1:10)
+```
+:::
+
+### Multiline 
+
+We can also use the same approach for multiline code cells, e.g.
+
+:::{.to-webr}
+```{r}
+x <- 1:10
+x
+
+y <- x^2
+y
+
+plot(x, y)
+```
+:::
+
+
 ## Autorun Code
 
 You may wish to allow the interactive cells to be automatically run when the document opens by specifying in the document header:
