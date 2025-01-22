@@ -19,6 +19,10 @@ format:
 
 - Fixed a bug where the `panelize` extension was not allow for multiple outputs to be shown in rendered results and interactive code chunks.
 
+## Documentation
+
+- Added examples for displaying graphs and multiline code cells in the `panelize` extension.
+
 # 0.0.1: Interactive Polyglot (06-11-2024)
 
 ## Features
