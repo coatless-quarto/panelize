@@ -8,6 +8,13 @@ format:
     toc: true
 ---
 
+# 0.0.2-dev.1: ???? (??-??-????)
+
+## Features
+
+## Bug fixes
+
+
 # 0.0.2: Playful Graphs (02-04-2024)
 
 ## Features
