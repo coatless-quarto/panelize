@@ -132,33 +132,22 @@
     ]
   },
   {
-    "objectID": "qpanelize-release-notes.html",
-    "href": "qpanelize-release-notes.html",
+    "objectID": "qpanelize-release-notes.html#features-1",
+    "href": "qpanelize-release-notes.html#features-1",
     "title": "Release Notes",
-    "section": "",
-    "text": "Graphs can now be displayed in the panelize extension.\n\n\n\n\n\nFixed a bug where the panelize extension was not allow for multiple outputs to be shown in rendered results and interactive code chunks.\n\n\n\n\n\nAdded examples for displaying graphs and multiline code cells in the panelize extension.",
+    "section": "Features",
+    "text": "Features\n\nGraphs can now be displayed in the panelize extension.",
     "crumbs": [
       "Extra",
       "Release Notes"
     ]
   },
   {
-    "objectID": "qpanelize-release-notes.html#features",
-    "href": "qpanelize-release-notes.html#features",
+    "objectID": "qpanelize-release-notes.html#bug-fixes-1",
+    "href": "qpanelize-release-notes.html#bug-fixes-1",
     "title": "Release Notes",
-    "section": "",
-    "text": "Graphs can now be displayed in the panelize extension.",
-    "crumbs": [
-      "Extra",
-      "Release Notes"
-    ]
-  },
-  {
-    "objectID": "qpanelize-release-notes.html#bug-fixes",
-    "href": "qpanelize-release-notes.html#bug-fixes",
-    "title": "Release Notes",
-    "section": "",
-    "text": "Fixed a bug where the panelize extension was not allow for multiple outputs to be shown in rendered results and interactive code chunks.",
+    "section": "Bug fixes",
+    "text": "Bug fixes\n\nFixed a bug where the panelize extension was not allow for multiple outputs to be shown in rendered results and interactive code chunks.",
     "crumbs": [
       "Extra",
       "Release Notes"
@@ -168,16 +157,16 @@
     "objectID": "qpanelize-release-notes.html#documentation",
     "href": "qpanelize-release-notes.html#documentation",
     "title": "Release Notes",
-    "section": "",
-    "text": "Added examples for displaying graphs and multiline code cells in the panelize extension.",
+    "section": "Documentation",
+    "text": "Documentation\n\nAdded examples for displaying graphs and multiline code cells in the panelize extension.",
     "crumbs": [
       "Extra",
       "Release Notes"
     ]
   },
   {
-    "objectID": "qpanelize-release-notes.html#features-1",
-    "href": "qpanelize-release-notes.html#features-1",
+    "objectID": "qpanelize-release-notes.html#features-2",
+    "href": "qpanelize-release-notes.html#features-2",
     "title": "Release Notes",
     "section": "Features",
     "text": "Features\n\npanelize allows for Quarto code cells to be tabbified.\n\n.to-source: converts an existing code cell also show its source with options.\n.to-pyodide: converts a Python cell to Python\n.to-webr: converts an R code cell to webR",
