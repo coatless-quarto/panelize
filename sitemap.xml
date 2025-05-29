@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://coatless-quarto.github.io/panelize/qpanelize-pyodide.html</loc>
-    <lastmod>2025-02-05T00:02:40.756Z</lastmod>
-  </url>
-  <url>
-    <loc>https://coatless-quarto.github.io/panelize/qpanelize-cell.html</loc>
-    <lastmod>2025-02-05T00:02:40.756Z</lastmod>
-  </url>
-  <url>
-    <loc>https://coatless-quarto.github.io/panelize/qpanelize-webr.html</loc>
-    <lastmod>2025-02-05T00:02:40.756Z</lastmod>
-  </url>
-  <url>
     <loc>https://coatless-quarto.github.io/panelize/qpanelize-release-notes.html</loc>
-    <lastmod>2025-02-05T00:02:40.756Z</lastmod>
-  </url>
-  <url>
-    <loc>https://coatless-quarto.github.io/panelize/index.html</loc>
-    <lastmod>2025-02-05T00:02:40.756Z</lastmod>
+    <lastmod>2025-05-29T03:46:45.682Z</lastmod>
   </url>
   <url>
     <loc>https://coatless-quarto.github.io/panelize/qpanelize-install.html</loc>
-    <lastmod>2025-02-05T00:02:40.756Z</lastmod>
+    <lastmod>2025-05-29T03:46:45.682Z</lastmod>
+  </url>
+  <url>
+    <loc>https://coatless-quarto.github.io/panelize/qpanelize-webr.html</loc>
+    <lastmod>2025-05-29T03:46:45.682Z</lastmod>
+  </url>
+  <url>
+    <loc>https://coatless-quarto.github.io/panelize/qpanelize-cell.html</loc>
+    <lastmod>2025-05-29T03:46:45.682Z</lastmod>
+  </url>
+  <url>
+    <loc>https://coatless-quarto.github.io/panelize/index.html</loc>
+    <lastmod>2025-05-29T03:46:45.682Z</lastmod>
+  </url>
+  <url>
+    <loc>https://coatless-quarto.github.io/panelize/qpanelize-pyodide.html</loc>
+    <lastmod>2025-05-29T03:46:45.682Z</lastmod>
   </url>
 </urlset>
