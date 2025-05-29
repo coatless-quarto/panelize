@@ -35,16 +35,29 @@ jobs:
                 any::xml2
                 any::reticulate
 
+        # Setup Python for reticulate
+        - uses: actions/setup-python@v5
+          with:
+            python-version: "3.x"
+    
+        # Install python dependencies for reticulate
+        - name: Setup r-reticulate venv
+          shell: Rscript {0}
+          run: |
+            path_to_python <- reticulate::virtualenv_create(
+              envname = "r-reticulate",
+              python = Sys.which("python"),
+              requirements = "docs/requirements.txt"
+            )
+            writeLines(sprintf("RETICULATE_PYTHON=%s", path_to_python),
+                      Sys.getenv("GITHUB_ENV"))
+
+
         # Back to our regularly scheduled Quarto output
         - name: "Set up Quarto"
           uses: quarto-dev/quarto-actions/setup@v2
           with:
             version: "pre-release"
-
-        # Install python dependencies
-        - name: "Install python dependencies"
-          run: |
-            pip install -r docs/requirements.txt
 
         # Install quarto extensions
         - name: "Install quarto extension for quarto-webr and quarto-pyodide"
