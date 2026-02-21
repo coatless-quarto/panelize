@@ -1,6 +1,6 @@
 {
   "To Source Panel": {
-    "prefix": "panelize-source",
+    "prefix": "source",
     "body": [
       "::: {.to-source}",
       "",
@@ -13,7 +13,7 @@
     "description": "Wrap a code cell in a Result/Source tabset."
   },
   "To WebR Panel": {
-    "prefix": "panelize-webr",
+    "prefix": "webr",
     "body": [
       "::: {.to-webr}",
       "",
@@ -26,7 +26,7 @@
     "description": "Wrap an R code cell in a Result/Interactive tabset using webR."
   },
   "To Pyodide Panel": {
-    "prefix": "panelize-pyodide",
+    "prefix": "pyodide",
     "body": [
       "::: {.to-pyodide}",
       "",
