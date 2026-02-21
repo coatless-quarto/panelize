@@ -1,0 +1,9 @@
+$schema: https://m.canouil.dev/quarto-wizard/assets/schema/v1/extension-schema.json
+
+classes:
+  to-source:
+    description: "Add a 'Result' and 'Source' tabset, showing rendered output alongside the raw source code."
+  to-webr:
+    description: "Add a 'Result' and 'Interactive' tabset, with the interactive tab using webR for in-browser R execution."
+  to-pyodide:
+    description: "Add a 'Result' and 'Interactive' tabset, with the interactive tab using Pyodide for in-browser Python execution."

@@ -1,0 +1,41 @@
+{
+  "To Source Panel": {
+    "prefix": "source",
+    "body": [
+      "::: {.to-source}",
+      "",
+      "```{${1|r,python|}}",
+      "$0",
+      "```",
+      "",
+      ":::"
+    ],
+    "description": "Wrap a code cell in a Result/Source tabset."
+  },
+  "To WebR Panel": {
+    "prefix": "webr",
+    "body": [
+      "::: {.to-webr}",
+      "",
+      "```{r}",
+      "$0",
+      "```",
+      "",
+      ":::"
+    ],
+    "description": "Wrap an R code cell in a Result/Interactive tabset using webR."
+  },
+  "To Pyodide Panel": {
+    "prefix": "pyodide",
+    "body": [
+      "::: {.to-pyodide}",
+      "",
+      "```{python}",
+      "$0",
+      "```",
+      "",
+      ":::"
+    ],
+    "description": "Wrap a Python code cell in a Result/Interactive tabset using Pyodide."
+  }
+}
