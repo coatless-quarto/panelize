@@ -32,6 +32,8 @@ website:
       - section: "Extra"
         contents:
         - qpanelize-release-notes.qmd
+        - href: https://blog.thecoatlessprofessor.com/projects/panelize/
+          text: "Blog posts"
 
 format: 
   html:
