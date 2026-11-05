@@ -152,6 +152,28 @@
     ]
   },
   {
+    "objectID": "qpanelize-release-notes.html",
+    "href": "qpanelize-release-notes.html",
+    "title": "Release Notes",
+    "section": "",
+    "text": "panelize now requires Quarto 1.11 or later.",
+    "crumbs": [
+      "Extra",
+      "Release Notes"
+    ]
+  },
+  {
+    "objectID": "qpanelize-release-notes.html#breaking-changes",
+    "href": "qpanelize-release-notes.html#breaking-changes",
+    "title": "Release Notes",
+    "section": "",
+    "text": "panelize now requires Quarto 1.11 or later.",
+    "crumbs": [
+      "Extra",
+      "Release Notes"
+    ]
+  },
+  {
     "objectID": "qpanelize-release-notes.html#features-1",
     "href": "qpanelize-release-notes.html#features-1",
     "title": "Release Notes",
