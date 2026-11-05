@@ -10,6 +10,10 @@ format:
 
 # 0.0.2-dev.1: ???? (??-??-????)
 
+## Breaking changes
+
+- panelize now requires Quarto 1.11 or later.
+
 ## Features
 
 ## Bug fixes
