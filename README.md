@@ -121,6 +121,13 @@ For R, that looks like:
 
 Thanks to [@mcanouil](https://github.com/mcanouil) and [@cscheid](https://github.com/cscheid) who provided great insight into approaching this problem by re-orienting it in a way that is more managable. Please see the [full discussion](https://github.com/quarto-dev/quarto-cli/discussions/9646).
 
+## Learn more
+
+- [Documentation](https://quarto.thecoatlessprofessor.com/panelize/)
+- [Release notes](https://quarto.thecoatlessprofessor.com/panelize/qpanelize-release-notes.html)
+- [Blog posts](https://blog.thecoatlessprofessor.com/projects/panelize/)
+- Discuss on [Mastodon](https://mastodon.social/@coatless/112591775123738084), [Bluesky](https://bsky.app/profile/coatless.bsky.social/post/3kuktfl3cyd27) or [X](https://x.com/axiomsofxyz/status/1800107935496045031)
+
 ## License
 
 panelize is licensed under AGPL-3.0-or-later with an exception: what you write and render with panelize stays yours, along with the output, under any terms you like. See [LICENSE](LICENSE) and [LICENSE-EXCEPTION.md](LICENSE-EXCEPTION.md).
