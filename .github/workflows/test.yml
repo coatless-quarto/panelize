@@ -1,0 +1,18 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 6 * * 1"  # weekly, to catch Quarto pre-release changes
+  workflow_dispatch:
+
+jobs:
+  test:
+    uses: coatless-quarto/.github/.github/workflows/extension-tests.yml@v1
+    with:
+      r: true  # the fixtures run R, and Python through knitr without reticulate
+      # panelize.lua has 8 LuaLS warnings from before the type cleanup, which
+      # waits on in-progress filter changes. Turn this on once it lands.
+      luals: false

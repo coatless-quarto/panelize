@@ -1,0 +1,20 @@
+---
+title: "panelize: .to-pyodide"
+engine: knitr
+knitr:
+  opts_chunk:
+    # Run Python with the plain python3 interpreter, so the tests need no
+    # reticulate
+    python.reticulate: false
+    engine.path:
+      python: python3
+filters:
+  - panelize
+---
+
+:::{.to-pyodide}
+```{python}
+x = [1, 2]
+print(x)
+```
+:::

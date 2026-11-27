@@ -1,0 +1,24 @@
+---
+title: "panelize: .to-source"
+engine: knitr
+filters:
+  - panelize
+---
+
+:::{.to-source}
+```{r}
+#| echo: fenced
+#| eval: true
+1 + 1
+
+plot(1:10)
+```
+:::
+
+:::{.to-source}
+```{r}
+#| label: plain
+x <- 3
+x
+```
+:::
