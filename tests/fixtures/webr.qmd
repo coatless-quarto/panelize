@@ -1,0 +1,13 @@
+---
+title: "panelize: .to-webr"
+engine: knitr
+filters:
+  - panelize
+---
+
+:::{.to-webr}
+```{r}
+1 + 1
+plot(1:10)
+```
+:::
